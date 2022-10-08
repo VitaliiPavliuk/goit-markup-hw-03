@@ -156,8 +156,6 @@ img {
     
     padding-top: 200px;
     padding-bottom: 200px;
-
-
 }
 
 .hero-title {
@@ -228,10 +226,11 @@ img {
 .features-list {
     display: flex;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .features-item {
-    flex-basis: calc((100%-90px)/4);
+    flex-basis: calc((100% - 90px) / 4);
 }
 
 .features-title {
@@ -259,7 +258,12 @@ img {
 
 .works-list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.works-item {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 /* team */
@@ -269,10 +273,13 @@ img {
 
 .team-list {
     display: flex;
-    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
 }
 
 .team-card {
+    flex-basis: calc((100% - 90px) / 4);
+
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -383,6 +390,10 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.project-card {
+    flex-basis: calc((100% - 60px) / 3);
 }
 
 .project {
