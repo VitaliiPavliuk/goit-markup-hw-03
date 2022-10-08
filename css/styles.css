@@ -152,6 +152,8 @@ img {
     color: var(--white-text-color);
 
     margin-bottom: 30px;
+
+    width: 696px;
 }
 
 /* button */
@@ -171,7 +173,9 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 32px;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: 0;
+    min-width: 216px;
+    justify-content: center;
 }
 
 .button:hover,
@@ -201,6 +205,15 @@ img {
 .features-section {
     padding-bottom: 0;
     background-color: green;
+}
+
+.features-list {
+    display: flex;
+    gap: 30px;
+}
+
+.features-item {
+    flex-basis: calc((100%-90px)/4);
 }
 
 .features-title {
@@ -271,7 +284,6 @@ img {
     letter-spacing: 0.03em;
 
     font-style: normal;
-
 }
 
 .contacts-footer:hover,
@@ -295,13 +307,13 @@ img {
 
 .logo-footer {
     color: var(--white-text-color);
+
+    display: block;
+    margin-bottom: 20px;
 }
 
-.address-list {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    gap: 9px;
+.address-item {
+    margin-bottom: 9px;
 }
 
 /* portfolio.html */
@@ -328,7 +340,7 @@ img {
 
     padding: 6px 22px;
     border-radius: 4px;
-    border: 1px solid transparent;
+    border: 0;
 }
 
 .filter:hover,
